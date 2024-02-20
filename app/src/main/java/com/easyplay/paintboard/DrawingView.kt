@@ -1,4 +1,4 @@
-package com.easycodingg.paintapp
+package com.easyplay.paintboard
 
 import android.content.Context
 import android.graphics.*
@@ -41,10 +41,10 @@ class DrawingView(
         }
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
 
-        canvas?.save()
+        canvas.save()
 
         for(drawingPath in drawingPathList) {
             drawPaint.apply {
@@ -52,9 +52,9 @@ class DrawingView(
                 color = drawingPath.strokeColor
                 maskFilter = drawingPath.maskFilter
             }
-            canvas?.drawPath(drawingPath.path, drawPaint)
+            canvas.drawPath(drawingPath.path, drawPaint)
         }
-        canvas?.restore()
+        canvas.restore()
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {

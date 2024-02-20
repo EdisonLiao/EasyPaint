@@ -1,4 +1,4 @@
-package com.easycodingg.paintapp
+package com.easyplay.paintboard
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.easycodingg.paintapp
+package com.easyplay.paintboard
 
 import android.graphics.BlurMaskFilter
 import android.graphics.Color
@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SeekBar
 import android.widget.Toast
-import com.easycodingg.paintapp.databinding.ActivityMainBinding
+import com.easyplay.paintboard.databinding.ActivityMainBinding
 import com.skydoves.colorpickerview.ColorEnvelope
 import com.skydoves.colorpickerview.ColorPickerDialog
 import com.skydoves.colorpickerview.listeners.ColorEnvelopeListener
